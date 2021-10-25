@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Group Nine Hospital || Appointment</title>
+    <link rel="stylesheet" href="../css/appointment.css" />
+    <link
+      rel="shortcut icon"
+      href="../title-icon/hospital.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <form action="" method="post" class="form">
+      <h1 class="form__title">book an appointment</h1>
+
+      <div class="form__contact-info">
+        <div class="form__input form__input--name">
+          <input
+            type="text"
+            name=""
+            id=""
+            placeholder="name"
+            required
+            autofocus
+          />
+        </div>
+
+        <div class="form__input form__input--email">
+          <input type="email" name="" id="email" placeholder="email" required />
+        </div>
+
+        <div class="form__input form__input--telephone">
+          <input type="tel" name="" id="phone" placeholder="phone" required />
+        </div>
+      </div>
+
+      <div class="form__other-info">
+        <div class="form__input form__input--date">
+          <input
+            type="date"
+            name=""
+            id=""
+            placeholder="appointment date"
+            required
+          />
+        </div>
+
+        <div class="form__input form__input--age">
+          <input type="age" name="" id="" placeholder="age" required />
+        </div>
+
+        <div class="form__radio-button">
+          <span>gender:</span>
+          <input type="radio" name="gender" id="male" />
+          <label for="male">male</label>
+
+          <input type="radio" name="gender" id="female" />
+          <label for="female">female</label>
+
+          <input type="radio" name="gender" id="other" />
+          <label for="other">other</label>
+        </div>
+      </div>
+
+      <div class="form__select">
+        <select name="" id="" class="select select--doctor">
+          <option value="" selected disabled>select doctor</option>
+          <option value="">gybex</option>
+          <option value="">name</option>
+          <option value="">name</option>
+          <option value="">name</option>
+        </select>
+
+        <select name="" id="" class="select select--location">
+          <option value="" selected disabled>select location</option>
+          <option value="">dome</option>
+          <option value="">achimota</option>
+          <option value="">location</option>
+          <option value="">location</option>
+        </select>
+
+        <select name="" id="" class="select select--speciality">
+          <option value="" selected disabled>select speciality</option>
+          <option value="">speciality</option>
+          <option value="">speciality</option>
+          <option value="">speciality</option>
+          <option value="">speciality</option>
+        </select>
+      </div>
+
+      <textarea
+        name=""
+        id=""
+        class="textarea"
+        placeholder="your query"
+      ></textarea>
+
+      <p form__text>
+        by submitting the form, i hereby accept the
+        <a href="#">terms and conditions</a>
+      </p>
+
+      <button type="submit" class="button">book now</button>
+    </form>
+
+    <section class="user-login">
+      <p>
+        <span><a href="./patient-login.html">sign in</a></span
+        >to have access to your medical records, appointment history,
+        cancellations, reschedules,etc
+      </p>
+    </section>
+  </body>
+</html>

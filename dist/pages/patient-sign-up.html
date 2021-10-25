@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="form, fieldset, legend" />
+    <meta name="author" content="GyBex Enoch" />
+    <title>Group Nine Hospital || Patient-Sign-Up</title>
+    <link rel="stylesheet" href="../css/sign-up.css" />
+  </head>
+  <body>
+    <form action="" autocomplete="off" class="form">
+      <h1 class="form__title">Patient Sign Up</h1>
+
+      <fieldset class="personal-info">
+        <legend>Personal Information</legend>
+
+        <div class="form__group form__group--name">
+          <label for="first-name">FULL NAME: </label>
+          <input
+            type="text"
+            name="full-mame"
+            id="full-name"
+            minlength="4"
+            maxlength="40"
+            autofocus
+            required
+          />
+        </div>
+
+        <div class="form__group form__group--date">
+          <label for="date">DATE OF BIRTH: </label>
+          <input type="date" name="date" id="date" />
+        </div>
+
+        <div class="form__group form__group--telephone">
+          <label for="phone">TELEPHONE: </label>
+          <input type="tel" name="contact" id="phone" />
+        </div>
+
+        <div class="form__group form__group--radio">
+          <p>Gender:</p>
+
+          <span>
+            <input type="radio" name="gender" value="male" id="male" />
+            <label for="male">Male</label>
+          </span>
+
+          <span>
+            <input type="radio" name="gender" value="female" id="female" />
+            <label for="gender">Female</label>
+          </span>
+        </div>
+      </fieldset>
+
+      <fieldset class="account-info">
+        <legend>Account details</legend>
+
+        <div class="form__group form__group--email">
+          <label for="email">EMAIL: </label>
+          <input type="email" name="email" id="email" minlength="10" required />
+        </div>
+
+        <div class="form__group form__group--password">
+          <label for="password">PASSWORD: </label>
+          <input type="password" name="password" id="password" required />
+        </div>
+
+        <div class="form__group form__group--confirm-password">
+          <label for="password"> CONFIRM PASSWORD: </label>
+          <input type="password" name="password" id="password" required />
+        </div>
+
+        <div class="form__group form__group--checkbox">
+          <input
+            type="checkbox"
+            name="checkbox"
+            value="terms-agreement"
+            id="terms-agreement"
+            required
+          />
+          <label for="check">
+            <span
+              >I agree to all the <a href="#"> terms and conditions</a></span
+            ></label
+          >
+        </div>
+      </fieldset>
+
+      <button type="submit" class="btn">click here to submit</button>
+    </form>
+  </body>
+</html>

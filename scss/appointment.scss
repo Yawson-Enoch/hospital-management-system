@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+$background: rgb(255, 255, 255);
+$primary-color: rgba(2, 48, 71, 1);
+$secondary-background: rgba(2, 48, 71, 1);
+$secondary-color: rgb(255, 255, 255);
+$main-padding: 1rem;
+$border: thin solid rgba(2, 48, 71, 1);
+$gradient: linear-gradient(to right, rgb(24, 126, 151), rgba(251, 133, 0, 1));
+$links: rgba(251, 133, 0, 1);
+$hover: rgba(6, 214, 160, 1);
+$secondary-heading: rgb(28, 181, 241);
+$margin-bottom: 2rem;
+
+:root {
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: $background;
+  color: $primary-color;
+  font-family: "Poppins", sans-serif;
+  text-transform: capitalize;
+}
+
+select,
+textarea,
+input,
+button {
+  text-transform: capitalize;
+  border: thin solid gray;
+  border-radius: 0.3rem;
+  padding: 0.3rem;
+  font-family: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: $links;
+
+  &:hover {
+    color: $hover;
+    text-decoration: underline;
+  }
+}
+
+:focus {
+  border: none;
+  outline: thin solid #147ac9;
+}
+
+h1 {
+  margin-bottom: $margin-bottom;
+  text-align: center;
+  color: $primary-color;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  max-width: 65rem;
+  padding: 1rem;
+  margin: 1rem auto;
+  box-shadow: 0px 0px 5px 5px rgb(209, 208, 208);
+
+  p {
+    margin-bottom: $margin-bottom;
+  }
+
+  // acts as a placeholder for other elements
+  %placeholder {
+    display: flex;
+    margin-bottom: $margin-bottom;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 1.5rem;
+  }
+
+  &__contact-info {
+    @extend %placeholder;
+  }
+
+  &__other-info {
+    @extend %placeholder;
+    align-items: center;
+    width: 100%;
+  }
+
+  .form__radio-button {
+    label {
+      margin-right: 2rem;
+    }
+
+    span {
+      margin-right: 1rem;
+      text-transform: uppercase;
+    }
+  }
+
+  &__input {
+    flex: 1 0 10rem;
+    height: 2.5rem;
+
+    input {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__select {
+    @extend %placeholder;
+  }
+
+  select {
+    @extend .form__input;
+    background: $secondary-background;
+    color: white;
+  }
+
+  textarea {
+    resize: none;
+    width: 100%;
+    height: 7rem;
+    margin-bottom: $margin-bottom;
+  }
+
+  button {
+    width: 30%;
+    height: 2.5rem;
+    margin-bottom: 0;
+    background: $secondary-background;
+    border: none;
+    margin: 0 auto;
+    cursor: pointer;
+    color: $links;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    // transition: transform .3s ease-in-out;
+
+    &:hover {
+      background: lighten($secondary-background, 10%);
+      transform: scale(1.03);
+    }
+
+    &:focus {
+      background: lighten($secondary-background, 7%);
+    }
+  }
+}
+
+.user-login {
+  max-width: 65rem;
+  margin: 0 auto;
+  padding: 0.3rem 1rem;
+
+  span {
+    display: inline-block;
+    margin-right: 0.5rem;
+  }
+}
+
+@media (max-width: (500rem / 16)) {
+  :root {
+    font-size: (14 / 16) * 100%;
+  }
+
+  .form {
+    width: 100%;
+    min-width: 25rem;
+    margin-top: 0;
+
+    &__contact-info {
+      gap: 2rem;
+    }
+
+    &__other-info {
+      width: 100%;
+    }
+
+    &__input {
+      flex: 1 1 15rem;
+    }
+
+    .form__radio-button {
+      label:not(:nth-of-type(3)) {
+        margin-right: 0.5rem;
+      }
+    }
+
+    textarea {
+      width: 100%;
+      margin: 2rem auto;
+      margin-top: 0;
+    }
+
+    button {
+      width: 100%;
+    }
+
+    .user-login {
+      width: 100%;
+      min-width: 20rem;
+    }
+  }
+}
