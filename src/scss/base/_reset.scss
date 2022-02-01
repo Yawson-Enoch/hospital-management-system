@@ -1,0 +1,98 @@
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 2rem;
+
+  @media (max-width: 300px) {
+    font-size: 50%;
+  }
+
+  @media (max-width: 150px) {
+    font-size: 30%;
+  }
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:focus {
+  outline: none;
+  border: none;
+}
+
+:focus-visible {
+  outline: 1px solid var(--secondary-color);
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--body-font);
+  font-size: 1.6rem;
+  overflow-x: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: var(--gap-lg);
+}
+
+p {
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+  font-weight: 700;
+  line-height: 1.8;
+  text-transform: uppercase;
+}
+
+input,
+textarea,
+select,
+button,
+label {
+  font: inherit;
+  display: block;
+  color: inherit;
+  cursor: pointer;
+}
+
+img,
+picture {
+  display: block;
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: var(--fs-h1);
+}
+
+h2 {
+  font-size: var(--fs-h2);
+}
+
+p,
+a {
+  font-size: var(--fs-p);
+}

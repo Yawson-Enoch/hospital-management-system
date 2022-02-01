@@ -1,0 +1,13 @@
+.btn {
+  border-color: transparent;
+  border-radius: var(--radius);
+  background: var(--blue-300);
+  padding: var(--padding);
+  transition: all var(--transition);
+  text-transform: uppercase;
+  font-size: var(--fs-p);
+
+  &:hover {
+    background: var(--blue-200);
+  }
+}

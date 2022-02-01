@@ -1,0 +1,20 @@
+{
+  "name": "hospital-management",
+  "version": "1.0.0",
+  "description": "mini template for a hospital management system",
+  "scripts": {
+    "ts": "tsc -w",
+    "scss": "sass -w --no-source-map src/scss/:dist/css/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yawson-Enoch/hospital-management-system.git"
+  },
+  "keywords": [],
+  "author": "gybex",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yawson-Enoch/hospital-management-system/issues"
+  },
+  "homepage": "https://github.com/Yawson-Enoch/hospital-management-system#readme"
+}

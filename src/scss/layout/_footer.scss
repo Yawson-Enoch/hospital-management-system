@@ -1,0 +1,31 @@
+@use '../abstracts' as *;
+
+.footer {
+  background: var(--primary-color);
+  color: var(--bg-color);
+  padding: var(--gap-xs) 0;
+
+  .svg {
+    svg {
+      transition: all var(--transition3);
+      fill: var(--tertiary-color);
+
+      &:hover {
+        fill: var(--secondary-color);
+      }
+    }
+  }
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--gap-xs);
+}
+
+.footer-icons {
+  display: flex;
+  gap: var(--gap-xs);
+}

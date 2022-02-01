@@ -1,0 +1,48 @@
+@import url('./fonts.css');
+
+:root {
+  // grey
+  --grey-100: #f1f5f9;
+  --grey-200: #e2e8f0;
+  --grey-300: #cbd5e1;
+  --grey-400: #94a3b8;
+  --grey-500: #64748b;
+  --grey-600: #475569;
+  --grey-700: #334155;
+  --grey-800: #1e293b;
+  --grey-900: #0f172a;
+
+  // rest of the colors
+  --black: #000000;
+  --white: #ffffff;
+  --red-dark: #842029;
+  --green-dark: #0f5132;
+  --primary-color: rgba(2, 48, 71, 1);
+  --secondary-color: rgb(28, 181, 241);
+  --tertiary-color: rgba(251, 133, 0, 1);
+  --gradient: linear-gradient(
+    to right,
+    var(--secondary-color),
+    var(--tertiary-color)
+  );
+
+  // fonts
+  --heading-font: 'Poppins', sans-serif;
+  --body-font: 'PT Serif', serif;
+
+  --fs-h1: clamp(2.5rem, 1rem + 3vw, 3rem);
+  --fs-h2: clamp(1.7rem, 1rem + 2.5vw, 2.5rem);
+  --fs-p: clamp(1.5rem, 1rem + 1.7vw, 1.7rem);
+  --fs-xs: clamp(1rem, 1rem + 1.2vw, 1.2rem);
+
+  // rest of the variables
+  --bg-color: var(--grey-100);
+  --text-color: var(--primary-color);
+  --radius-xs: 0.5rem;
+  --radius-md: 1rem;
+  --gap-xs: var(--fs-xs);
+  --gap-md: var(--fs-p);
+  --gap-lg: var(--fs-h1);
+  --transition3: 0.3s ease-in-out;
+  --transition5: 0.5s ease-in-out;
+}
