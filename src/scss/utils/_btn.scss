@@ -1,3 +1,5 @@
+@use '../abstracts' as *;
+
 .btn {
   border-color: transparent;
   border-radius: var(--radius);
@@ -7,7 +9,13 @@
   text-transform: uppercase;
   font-size: var(--fs-p);
 
-  &:hover {
+  &:active {
     background: var(--blue-200);
+  }
+
+  @include hover() {
+    &:hover {
+      background: var(--blue-200);
+    }
   }
 }

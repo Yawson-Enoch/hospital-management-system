@@ -4,7 +4,7 @@
   "description": "mini template for a hospital management system",
   "scripts": {
     "ts": "tsc -w",
-    "scss": "sass -w --no-source-map src/scss/:dist/css/"
+    "scss": "sass -w --no-source-map --update --style='compressed' src/scss/:dist/css/"
   },
   "repository": {
     "type": "git",

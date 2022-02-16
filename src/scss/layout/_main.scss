@@ -39,9 +39,16 @@
     color: var(--tertiary-color);
     width: fit-content;
 
-    &:hover {
+    &:active {
       text-decoration: underline;
       text-underline-offset: 0.3rem;
+    }
+
+    @include hover() {
+      &:hover {
+        text-decoration: underline;
+        text-underline-offset: 0.3rem;
+      }
     }
   }
   .image {

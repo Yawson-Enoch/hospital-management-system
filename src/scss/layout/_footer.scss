@@ -10,8 +10,14 @@
       transition: all var(--transition3);
       fill: var(--tertiary-color);
 
-      &:hover {
+      &:active {
         fill: var(--secondary-color);
+      }
+
+      @include hover() {
+        &:hover {
+          fill: var(--secondary-color);
+        }
       }
     }
   }

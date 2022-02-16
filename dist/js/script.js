@@ -16,6 +16,11 @@ navToggle.addEventListener('click', () => {
         times.style.display = 'none';
     }
 });
+window.addEventListener('scroll', () => {
+    nav.classList.remove('active');
+    bars.style.display = 'flex';
+    times.style.display = 'none';
+});
 links.forEach((link) => {
     link.addEventListener('click', () => {
         nav.classList.remove('active');

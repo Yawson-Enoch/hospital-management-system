@@ -62,8 +62,14 @@
   border-radius: var(--radius-xs);
   transition: all var(--transition3);
 
-  &:hover {
+  &:active {
     background: var(--grey-700);
+  }
+
+  @include hover() {
+    &:hover {
+      background: var(--grey-700);
+    }
   }
 
   @include breakpoint() {
@@ -121,13 +127,26 @@
     width: $size;
     height: $size;
   }
-  &:hover {
+
+  &:active {
     a {
       color: var(--secondary-color);
     }
 
     svg {
       fill: var(--secondary-color);
+    }
+  }
+
+  @include hover() {
+    &:hover {
+      a {
+        color: var(--secondary-color);
+      }
+
+      svg {
+        fill: var(--secondary-color);
+      }
     }
   }
 }
@@ -212,9 +231,16 @@
       padding: var(--gap-md);
     }
 
-    &:hover {
+    &:active {
       background: var(--tertiary-color);
       color: var(--primary-color);
+    }
+
+    @include hover() {
+      &:hover {
+        background: var(--tertiary-color);
+        color: var(--primary-color);
+      }
     }
   }
 }
